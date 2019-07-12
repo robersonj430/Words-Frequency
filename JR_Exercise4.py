@@ -5,9 +5,10 @@ Created on Thu Jul 11 15:06:44 2019
 @author: rober
 """
 
-Unknown_Files = {'Unknown 1':'unknown-lang.txt', 'Unknown 2':'Unknown-100000.txt'}
+Unknown_Files = {'Unknown 1':'unknown-lang.txt', 'Unknown 2':'Unknown-100000.txt',
+                 'Unknown 3':'Unknown-pg23620.txt', 'Unknown 4':'Unknown-pg6110.txt'}
 Training_Files = {'Spanish':'cherbonnel-mi-tio_SP.txt','English':'eaton-boy-scouts_EN.txt',
-         'German':'schloemp-tolle-koffer_DE.txt'}
+         'German':'schloemp-tolle-koffer_DE.txt','Portugese':'15047-0_PE.txt'}
 
 import os
 os.chdir("C:\\Users\\rober\\OneDrive\\Desktop\\IMT511\\Words-Frequency")
