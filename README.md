@@ -4,6 +4,7 @@ Frequency of words in files
 ##Code
 
 import os
+os.chdir("C:\\Users\\rober\\OneDrive\\Desktop\\IMT511\\Most-Frequent")
 
 def frequency_table(file_name):
     with open(file_name, encoding='utf-8') as f:
@@ -26,9 +27,9 @@ def frequency_table(file_name):
     return(Most_Frequent)
 
 
-print('\nSpanish\n', frequency_table('C:\\Users\\rober\\Downloads\\cherbonnel-mi-tio_SP.txt'))
-print('\nEnglish\n', frequency_table('C:\\Users\\rober\\Downloads\\eaton-boy-scouts_EN.txt'))
-print('\nGerman\n', frequency_table('C:\\Users\\rober\\Downloads\\schloemp-tolle-koffer_DE.txt'))
-print('\nUnknown\n', frequency_table('C:\\Users\\rober\\Downloads\\unknown-lang.txt'))
+print('\nSpanish\n', frequency_table('cherbonnel-mi-tio_SP.txt'))
+print('\nEnglish\n', frequency_table('eaton-boy-scouts_EN.txt'))
+print('\nGerman\n', frequency_table('schloemp-tolle-koffer_DE.txt'))
+print('\nUnknown\n', frequency_table('unknown-lang.txt'))
 
 print("\nI predict this Unknown is Spanish")
