@@ -1,35 +1,11 @@
 # Words-Frequency
 Frequency of words in files
 
-##Code
+# Tell me about this code!
+You can feed in files with an unknown language to this code
+It will tell you if the language is
+* Spanish
+* English
+* German
 
-import os
-os.chdir("C:\\Users\\rober\\OneDrive\\Desktop\\IMT511\\Most-Frequent")
-
-def frequency_table(file_name):
-    with open(file_name, encoding='utf-8') as f:
-        content = f.read()
-    content_strip = content.strip("|©!@#$%^&*()-_=+,.;:?/<>'`[]")
-    Word_List = content_strip.split()
-    total_words = len(Word_List)
-    frequency = {}
-    for w in Word_List:
-        if len(w)>5:
-            continue
-        if w not in frequency:
-            frequency[w] = 0
-        frequency[w] += 1
-    for w in frequency:
-        frequency[w] = frequency[w]/total_words
-    sorted_list = sorted(frequency.items(), key=lambda kv: kv[1], reverse=True)
-    Most_Frequent = dict(sorted_list[:11])
-
-    return(Most_Frequent)
-
-
-print('\nSpanish\n', frequency_table('cherbonnel-mi-tio_SP.txt'))
-print('\nEnglish\n', frequency_table('eaton-boy-scouts_EN.txt'))
-print('\nGerman\n', frequency_table('schloemp-tolle-koffer_DE.txt'))
-print('\nUnknown\n', frequency_table('unknown-lang.txt'))
-
-print("\nI predict this Unknown is Spanish")
+If you want to test more languages, you can feed it more training files
